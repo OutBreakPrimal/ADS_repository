@@ -49,9 +49,9 @@ public class Main {
         printPath(bfs.pathTo(to), fromOg + " - " + toOg);
 
         System.out.println("Dijkstra shortest path (by weight)");
-        TajikistanSearch<String> dijkstra = new TajikistanSearch<>(graph, from);
+        TajikistanSearch<String> tajik = new TajikistanSearch<>(graph, from);
 
-        printPath(dijkstra.pathTo(to), fromOg + " - " + toOg);
+        printPath(tajik.pathTo(to), fromOg + " - " + toOg + " " + tajik.distanceTo(to));
     }
 
     private static <V> void printPath(List<Vertex<V>> path, String label) {

@@ -52,8 +52,6 @@ public class Main {
         TajikistanSearch<String> dijkstra = new TajikistanSearch<>(graph, from);
 
         printPath(dijkstra.pathTo(to), fromOg + " - " + toOg);
-
-        System.out.println("Distance Almaty - Astana  : " + dijkstra.distanceTo(astana));
     }
 
     private static <V> void printPath(List<Vertex<V>> path, String label) {
